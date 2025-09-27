@@ -1,1 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keith Mawhood — IT Consulting</title>
+  <meta name="description" content="Practical IT consulting, security, and VoIP HIPAA advisory with clear scopes, fast starts, and outcome-focused delivery." />
+  <style>
+    :root {
+      --bg:#0f172a;
+      --panel:#0b1228;
+      --text:#e5e7eb;
+      --muted:#94a3b8;
+      --brand:#60a5fa;
+      --brand-strong:#3b82f6;
+      --card:#111827;
+      --border:#1f2937;
+      --shadow:0 8px 24px rgba(0,0,0,.35);
+      --radius:16px;
+      --pad:20px;
+      --max:1040px;
+    }
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif}
+    a{color:var(--brand)}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:30;background:rgba(15,23,42,.75);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:.2px}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--brand)}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--text);text-decoration:none;font-weight:600;opacity:.9}
+    nav a:hover{opacity:1}
+    .btn{display:inline-block;background:var(--brand);color:#081018;text-decoration:none;font-weight:700;padding:12px 16px;border-radius:12px;box-shadow:var(--shadow)}
+    .btn:hover{background:var(--brand-strong)}
+    .hero{padding:72px 0 40px;background:linear-gradient(180deg,rgba(59,130,246,.12),transparent 60%), radial-gradient(800px 400px at 80% -10%, rgba(96,165,250,.18), transparent 60%)}
+    .hero h1{font-size:clamp(28px,4vw,40px);line-height:1.2;margin:10px 0}
+    .hero p{color:var(--muted);max-width:720px}
+    .stack{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:var(--pad);box-shadow:var(--shadow)}
+    .span-6{grid-column:span 6}
+    .span-4{grid-column:span 4}
+    .span-12{grid-column:span 12}
+    @media(max-width:900px){.span-6{grid-column:span 12}.span-4{grid-column:span 12}}
+    section{padding:28px 0}
+    h2{font-size:clamp(20px,3vw,28px);margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .list{margin:8px 0 0 0;padding:0 0 0 18px}
+    .pkg{display:flex;flex-direction:column;gap:10px}
+    .price{font-size:20px;font-weight:800}
+    footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font-size:14px}
+    .pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-size:12px;color:var(--muted)}
+    .grid-3{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+    @media(max-width:900px){.grid-3{grid-template-columns:1fr}}
+    .kicker{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><span class="dot"></span><span>Keith Mawhood Consulting</span></div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+          <li><a href="#contact" class="btn">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="kicker">IT consulting • security • VoIP HIPAA</span>
+        <h1>Practical IT consulting, security, and VoIP HIPAA advisory</h1>
+        <p>Clear scopes, fast starts, and outcome focused delivery for small and mid sized teams and agencies.</p>
+        <p><a class="btn" href="#contact">Start a QuickLift</a> <span class="pill">Invoices via Stripe • ACH available</span></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap stack">
+        <div class="card span-6">
+          <h2>About</h2>
+          <p>Keith Mawhood provides hands on IT consulting and advisory for agencies and regulated businesses. Work spans VoIP, compliance, and security architecture with an emphasis on practical results.</p>
+        </div>
+        <div class="card span-6">
+          <h2>Approach</h2>
+          <ul class="list">
+            <li>Discovery → scope → QuickLift plan</li>
+            <li>Transparent estimates and guardrails</li>
+            <li>Documentation and clear handoff at close</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <h2>Services</h2>
+        <div class="grid-3">
+          <div class="card"><h3>VoIP Security & Call Flows</h3><p class="muted">Harden signaling, encryption, and call routing.</p></div>
+          <div class="card"><h3>HIPAA Baseline & PHI Mapping</h3><p class="muted">Identify where sensitive data moves and set safe defaults.</p></div>
+          <div class="card"><h3>Recording & Retention Policy</h3><p class="muted">Align recording use with compliance requirements.</p></div>
+          <div class="card"><h3>Carrier & PBX Review</h3><p class="muted">Validate trunking, authentication, and routing setups.</p></div>
+          <div class="card"><h3>Agent Platform Review</h3><p class="muted">Ensure AI voice agents operate safely in regulated contexts.</p></div>
+          <div class="card"><h3>Other Requests</h3><p class="muted">Have a project outside these boxes? Request a custom quote.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="wrap">
+        <h2>Packages</h2>
+        <div class="grid-3">
+          <div class="card pkg">
+            <h3>QuickLift (Flagship)</h3>
+            <div class="price">Starting at $299</div>
+            <p>Two 45 minute sessions with offline analysis in between. Deliverables include:</p>
+            <ul class="list">
+              <li>Executive summary (1 page)</li>
+              <li>Risk map (top 5 issues)</li>
+              <li>Action checklist (quick wins + near term)</li>
+              <li>Config/policy notes (up to 3 focus areas)</li>
+              <li>One diagram of stack or flow</li>
+              <li>Exact vendor links</li>
+              <li>Recordings & transcripts</li>
+              <li>One round of edits</li>
+            </ul>
+          </div>
+          <div class="card pkg">
+            <h3>Quick Start Audit</h3>
+            <p>Broader environment review. Discovery and artifact check with a priority plan for the next 30 days. Includes findings with risk/effort trade offs and a clear action map.</p>
+          </div>
+          <div class="card pkg">
+            <h3>Monthly Advisory</h3>
+            <p>Reserved hours for ongoing consulting. N hours per month, async support, and a quarterly roadmap. Ideal for agencies that want a compliance safety net.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compliance">
+      <div class="wrap stack">
+        <div class="card span-6">
+          <h2>Compliance and Trust</h2>
+          <ul class="list">
+            <li>Data handling aligned to least privilege and need to know</li>
+            <li>Secure channels for access and file exchange</li>
+            <li>Clear shared responsibility and scope boundaries</li>
+          </ul>
+        </div>
+        <div class="card span-6">
+          <h2>Billing</h2>
+          <ul class="list">
+            <li>Invoices issued via Stripe</li>
+            <li>ACH available for retainers and deposits</li>
+            <li>Upfront or milestone based payments</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap stack">
+        <div class="card span-6">
+          <h2>Contact</h2>
+          <p><a class="btn" id="emailBtn" href="#">Book a QuickLift</a></p>
+          <p class="muted">Or use the form for custom quotes and other requests.</p>
+        </div>
+        <div class="card span-6">
+          <h2>Message (Netlify optional)</h2>
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <p><label>Name<br><input type="text" name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#0a1022;color:var(--text)"></label></p>
+            <p><label>Email<br><input type="email" name="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#0a1022;color:var(--text)"></label></p>
+            <p><label>Message<br><textarea name="message" rows="5" required style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#0a1022;color:var(--text)"></textarea></label></p>
+            <p><button class="btn" type="submit">Send</button></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© <span id="y"></span> Keith Mawhood. All rights reserved.</div>
+      <div class="muted">This is a lightweight static site. Host on GitHub Pages, Netlify, or Cloudflare Pages.</div>
+    </div>
+  </footer>
+
+  <script>
+    const user = "hello";
+    const domain = "keithmawhood.com";
+    const btn = document.getElementById('emailBtn');
+    if(btn){
+      const addr = user + "@" + domain;
+      btn.href = "mailto:" + addr + "?subject=QuickLift Inquiry";
+    }
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
