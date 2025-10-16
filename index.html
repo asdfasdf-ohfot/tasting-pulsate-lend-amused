@@ -3,68 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Keith Mawhood — IT Consulting</title>
-  <meta name="description" content="aPractical IT Architecture & Engineering with clear scopes, fast starts, and outcome-focused delivery." />
+  <title>Keith Mawhood Consulting — QuickLift VoIP HIPAA</title>
+  <meta name="description" content="Practical IT consulting with clear scopes, fast starts, and outcome focused delivery. QuickLift: two session HIPAA or VoIP engagement with tangible deliverables." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
+    :root{
       --bg:#0f172a;
-      --panel:#0b1228;
-      --text:#e5e7eb;
-      --muted:#94a3b8;
-      --brand:#60a5fa;
-      --brand-strong:#3b82f6;
-      --card:#111827;
-      --border:#1f2937;
-      --shadow:0 8px 24px rgba(0,0,0,.35);
-      --radius:16px;
-      --pad:20px;
-      --max:1040px;
+      --panel:#111936;
+      --muted:#9aa4b2;
+      --text:#e6edf3;
+      --brand:#3b82f6;
+      --brand-2:#22d3ee;
+      --ring:rgba(59,130,246,.35);
+      --radius:14px;
+      --shadow:0 6px 20px rgba(2,8,23,.35);
     }
-    html,body{height:100%}
-    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif}
+    *{box-sizing:border-box}
+    html,body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#1e293b 0%, var(--bg) 60%), var(--bg);color:var(--text);font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial}
     a{color:var(--brand)}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;z-index:30;background:rgba(15,23,42,.75);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--border)}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:.2px}
-    .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--brand)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(15,23,42,.7);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid rgba(148,163,184,.15);z-index:10}
+    header .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{font-weight:700;letter-spacing:.2px}
     nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-    nav a{color:var(--text);text-decoration:none;font-weight:600;opacity:.9}
-    nav a:hover{opacity:1}
-    .btn{display:inline-block;background:var(--brand);color:#081018;text-decoration:none;font-weight:700;padding:12px 16px;border-radius:12px;box-shadow:var(--shadow)}
-    .btn:hover{background:var(--brand-strong)}
-    .hero{padding:72px 0 40px;background:linear-gradient(180deg,rgba(59,130,246,.12),transparent 60%), radial-gradient(800px 400px at 80% -10%, rgba(96,165,250,.18), transparent 60%)}
-    .hero h1{font-size:clamp(28px,4vw,40px);line-height:1.2;margin:10px 0}
-    .hero p{color:var(--muted);max-width:720px}
-    .stack{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:var(--pad);box-shadow:var(--shadow)}
+    nav a{padding:8px 10px;border-radius:10px;text-decoration:none;color:var(--text)}
+    nav a.btn{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#06131f;font-weight:700}
+    .hero{padding:80px 0 40px}
+    h1{font-size:42px;line-height:1.2;margin:0 0 12px}
+    .kicker{letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-size:12px;margin-bottom:12px}
+    p.lead{font-size:18px;color:#c9d2dc;max-width:800px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#06131f;text-decoration:none;font-weight:700;box-shadow:var(--shadow)}
+    .chip{display:inline-block;padding:8px 12px;border-radius:999px;background:#0b1326;border:1px solid rgba(148,163,184,.2);color:#b8c2cc;font-size:13px}
+    section{padding:28px 0}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
     .span-6{grid-column:span 6}
     .span-4{grid-column:span 4}
     .span-12{grid-column:span 12}
-    @media(max-width:900px){.span-6{grid-column:span 12}.span-4{grid-column:span 12}}
-    section{padding:28px 0}
-    h2{font-size:clamp(20px,3vw,28px);margin:0 0 12px}
+    @media (max-width:860px){
+      .span-6,.span-4,.span-12{grid-column:1 / -1}
+      h1{font-size:32px}
+    }
+    .card{background:linear-gradient(180deg,#0d1226,#0b1326);border:1px solid rgba(148,163,184,.16);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .card h2{margin:0 0 8px;font-size:20px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .list{margin:10px 0 0 0;padding-left:18px}
+    .list li{margin:6px 0}
     .muted{color:var(--muted)}
-    .list{margin:8px 0 0 0;padding:0 0 0 18px}
-    .pkg{display:flex;flex-direction:column;gap:10px}
-    .price{font-size:20px;font-weight:800}
-    footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font-size:14px}
-    .pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-size:12px;color:var(--muted)}
-    .grid-3{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
-    @media(max-width:900px){.grid-3{grid-template-columns:1fr}}
-    .kicker{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+    .pill{display:inline-block;background:#0b1429;border:1px solid rgba(148,163,184,.18);padding:6px 10px;border-radius:999px;font-size:12px;margin-right:6px}
+    footer{padding:28px 0;border-top:1px solid rgba(148,163,184,.15);margin-top:24px}
+    input,textarea{width:100%;background:#0a1122;border:1px solid rgba(148,163,184,.2);color:var(--text);padding:10px 12px;border-radius:10px}
+    textarea{min-height:120px;resize:vertical}
+    .submit{cursor:pointer;border:0}
+    .tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
   </style>
 </head>
 <body>
+
   <header>
-    <div class="wrap nav">
-      <div class="brand"><span class="dot"></span><span>Keith Mawhood Consulting</span></div>
+    <div class="wrap bar">
+      <div class="logo">Keith Mawhood Consulting</div>
       <nav aria-label="Primary">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#packages">Packages</a></li>
           <li><a href="#compliance">Compliance</a></li>
+          <li><a href="#policies">Policies</a></li>
           <li><a href="#contact" class="btn">Contact</a></li>
         </ul>
       </nav>
@@ -72,17 +79,21 @@
   </header>
 
   <main>
+
     <section class="hero">
       <div class="wrap">
-        <span class="kicker">IT consulting • security • VoIP HIPAA</span>
+        <div class="kicker">IT consulting  Security  VoIP HIPAA</div>
         <h1>Practical IT consulting, security, and VoIP HIPAA advisory</h1>
-        <p>Clear scopes, fast starts, and outcome focused delivery for small and mid sized teams and agencies.</p>
-        <p><a class="btn" href="#contact">Start a QuickLift</a> <span class="pill">Invoices via Stripe • ACH available</span></p>
+        <p class="lead">Clear scopes, fast starts, and outcome focused delivery for small and mid sized teams and agencies.</p>
+        <div class="actions">
+          <a class="btn" id="startQuicklift" href="#contact">Start a QuickLift</a>
+          <span class="chip">Invoices via Stripe  ACH available</span>
+        </div>
       </div>
     </section>
 
     <section id="about">
-      <div class="wrap stack">
+      <div class="wrap grid">
         <div class="card span-6">
           <h2>About</h2>
           <p>Keith Mawhood provides hands on IT consulting and advisory for agencies and regulated businesses. Work spans VoIP, compliance, and security architecture with an emphasis on practical results.</p>
@@ -90,7 +101,7 @@
         <div class="card span-6">
           <h2>Approach</h2>
           <ul class="list">
-            <li>Discovery → scope → QuickLift plan</li>
+            <li>Discovery to scope to QuickLift plan</li>
             <li>Transparent estimates and guardrails</li>
             <li>Documentation and clear handoff at close</li>
           </ul>
@@ -101,13 +112,31 @@
     <section id="services">
       <div class="wrap">
         <h2>Services</h2>
-        <div class="grid-3">
-          <div class="card"><h3>VoIP Security & Call Flows</h3><p class="muted">Harden signaling, encryption, and call routing.</p></div>
-          <div class="card"><h3>HIPAA Baseline & PHI Mapping</h3><p class="muted">Identify where sensitive data moves and set safe defaults.</p></div>
-          <div class="card"><h3>Recording & Retention Policy</h3><p class="muted">Align recording use with compliance requirements.</p></div>
-          <div class="card"><h3>Carrier & PBX Review</h3><p class="muted">Validate trunking, authentication, and routing setups.</p></div>
-          <div class="card"><h3>Agent Platform Review</h3><p class="muted">Ensure AI voice agents operate safely in regulated contexts.</p></div>
-          <div class="card"><h3>Other Requests</h3><p class="muted">Have a project outside these boxes? Request a custom quote.</p></div>
+        <div class="grid">
+          <div class="card span-4">
+            <h3>VoIP Security and Call Flows</h3>
+            <p>Harden signaling, encryption, and routing.</p>
+          </div>
+          <div class="card span-4">
+            <h3>HIPAA Baseline and PHI Mapping</h3>
+            <p>Locate data touchpoints and set safe defaults.</p>
+          </div>
+          <div class="card span-4">
+            <h3>Recording and Retention Policy</h3>
+            <p>Align recording use with compliance requirements.</p>
+          </div>
+          <div class="card span-4">
+            <h3>Carrier and PBX Review</h3>
+            <p>Validate trunking, authentication, and routing.</p>
+          </div>
+          <div class="card span-4">
+            <h3>Agent Platform Review</h3>
+            <p>Operate voice AI safely in regulated contexts.</p>
+          </div>
+          <div class="card span-4">
+            <h3>Other Requests</h3>
+            <p>Have a project outside these boxes. Request a custom quote.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -115,36 +144,46 @@
     <section id="packages">
       <div class="wrap">
         <h2>Packages</h2>
-        <div class="grid-3">
-          <div class="card pkg">
-            <h3>QuickLift (Flagship)</h3>
-            <div class="price">Starting at $299</div>
-            <p>Two 45 minute sessions with offline analysis in between. Deliverables include:</p>
+        <div class="grid">
+          <div class="card span-4">
+            <h3>QuickLift</h3>
+            <p class="muted">Starting at $299</p>
+            <p>Two 45 minute sessions with offline analysis between them.</p>
             <ul class="list">
-              <li>Executive summary (1 page)</li>
-              <li>Risk map (top 5 issues)</li>
-              <li>Action checklist (quick wins + near term)</li>
-              <li>Config/policy notes (up to 3 focus areas)</li>
+              <li>Executive summary one page</li>
+              <li>Risk map top five issues</li>
+              <li>Action checklist quick wins and near term</li>
+              <li>Config and policy notes up to three focus areas</li>
               <li>One diagram of stack or flow</li>
               <li>Exact vendor links</li>
-              <li>Recordings & transcripts</li>
+              <li>Recordings and transcripts</li>
               <li>One round of edits</li>
             </ul>
+            <div class="tagrow">
+              <span class="pill">HIPAA</span><span class="pill">VoIP</span><span class="pill">Retell Netsapiens Telnyx Twilio</span>
+            </div>
           </div>
-          <div class="card pkg">
+
+          <div class="card span-4">
             <h3>Quick Start Audit</h3>
-            <p>Broader environment review. Discovery and artifact check with a priority plan for the next 30 days. Includes findings with risk/effort trade offs and a clear action map.</p>
+            <p>Broader environment review and a priority plan for the next 30 days.</p>
+            <ul class="list">
+              <li>Discovery and artifact check</li>
+              <li>Findings with risk and effort</li>
+              <li>Clear action map</li>
+            </ul>
           </div>
-          <div class="card pkg">
+
+          <div class="card span-4">
             <h3>Monthly Advisory</h3>
-            <p>Reserved hours for ongoing consulting. N hours per month, async support, and a quarterly roadmap. Ideal for agencies that want a compliance safety net.</p>
+            <p>Reserved hours, async support, and a quarterly roadmap. Ideal for agencies that want a compliance safety net.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="compliance">
-      <div class="wrap stack">
+      <div class="wrap grid">
         <div class="card span-6">
           <h2>Compliance and Trust</h2>
           <ul class="list">
@@ -157,50 +196,75 @@
           <h2>Billing</h2>
           <ul class="list">
             <li>Invoices issued via Stripe</li>
-            <li>ACH available for retainers and deposits</li>
+            <li>ACH available for retainers and project deposits</li>
             <li>Upfront or milestone based payments</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <section id="policies">
+      <div class="wrap grid">
+        <div class="card span-6">
+          <h2>Refunds and Cancellations</h2>
+          <ul class="list">
+            <li><strong>QuickLift.</strong> Full refund if you cancel at least 24 hours before Call 1. If work has begun on intake research or drafting, a 50 percent cancellation fee may apply. You can reschedule Call 1 once within 7 days at no charge.</li>
+            <li><strong>Monthly Advisory.</strong> Cancel any time before the next billing period. Time already used is not refundable. Unused hours do not roll over unless agreed in writing.</li>
+            <li><strong>Delivery.</strong> Services are delivered by scheduled calls and written deliverables. No physical goods are shipped.</li>
+          </ul>
+          <p class="muted">If you need an exception, ask and we will try to accommodate.</p>
+        </div>
+        <div class="card span-6">
+          <h2>Privacy and Terms</h2>
+          <ul class="list">
+            <li><strong>Payments.</strong> Payments are processed by Stripe. Card and bank details are handled by Stripe, not stored on this site.</li>
+            <li><strong>Data collected.</strong> Name, email, and project details that you provide by form or email. Used only to deliver services and support.</li>
+            <li><strong>Security.</strong> Access and file exchange use secure channels. Sensitive materials are shared by agreement only.</li>
+            <li><strong>Scope and disclaimers.</strong> Consulting provides guidance and documentation. It is not legal advice and does not certify compliance.</li>
+          </ul>
+          <p class="muted">Questions about these policies. Email <a href="mailto:hello@keithmawhood.com">hello@keithmawhood.com</a>.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
-      <div class="wrap stack">
+      <div class="wrap grid">
         <div class="card span-6">
           <h2>Contact</h2>
           <p><a class="btn" id="emailBtn" href="#">Book a QuickLift</a></p>
           <p class="muted">Or use the form for custom quotes and other requests.</p>
+          <p><strong>Support email:</strong> <a href="mailto:hello@keithmawhood.com">hello@keithmawhood.com</a></p>
         </div>
         <div class="card span-6">
-          <h2>Message (Netlify optional)</h2>
-          <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact">
-            <p><label>Name<br><input type="text" name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#0a1022;color:var(--text)"></label></p>
-            <p><label>Email<br><input type="email" name="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#0a1022;color:var(--text)"></label></p>
-            <p><label>Message<br><textarea name="message" rows="5" required style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#0a1022;color:var(--text)"></textarea></label></p>
-            <p><button class="btn" type="submit">Send</button></p>
+          <h2>Message</h2>
+          <form name="contact" method="post" data-netlify="true">
+            <p><label>Name<br /><input type="text" name="name" required></label></p>
+            <p><label>Email<br /><input type="email" name="email" required></label></p>
+            <p><label>Message<br /><textarea name="message" required></textarea></label></p>
+            <p><button class="btn submit" type="submit">Send</button></p>
           </form>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
-    <div class="wrap">
-      <div>© <span id="y"></span> Keith Mawhood. All rights reserved.</div>
-      <div class="muted">This is a lightweight static site. Host on GitHub Pages, Netlify, or Cloudflare Pages.</div>
+    <div class="wrap grid">
+      <div class="span-12">© <span id="y"></span> Keith Mawhood. All rights reserved.</div>
+      <div class="span-12 muted">Consulting services only. No physical goods are sold. Questions: <a href="mailto:hello@keithmawhood.com">hello@keithmawhood.com</a>.</div>
     </div>
   </footer>
 
   <script>
+    // Mail button wiring
     const user = "hello";
     const domain = "keithmawhood.com";
+    const addr = user + "@" + domain;
     const btn = document.getElementById('emailBtn');
-    if(btn){
-      const addr = user + "@" + domain;
-      btn.href = "mailto:" + addr + "?subject=QuickLift Inquiry";
-    }
+    if(btn){ btn.href = "mailto:" + addr + "?subject=QuickLift Inquiry"; }
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
